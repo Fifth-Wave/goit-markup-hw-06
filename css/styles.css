@@ -678,7 +678,10 @@ img {
 }
 
 .order-text {
+  box-sizing: border-box;
   position: relative;
+  margin-top: 4px;
+  margin-bottom: 10px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -687,15 +690,15 @@ img {
 
 .order-icon {
   position: absolute;
-  top: 29px;
+  top: 50%;
   left: 12px;
+  transform: translateY(-50%);
 }
 
 .order-input {
   width: 448px;
   height: 40px;
-  margin-top: 4px;
-  margin-bottom: 10px;
+
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
