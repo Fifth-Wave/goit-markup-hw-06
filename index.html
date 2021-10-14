@@ -479,8 +479,8 @@
       <form name="order">
         <p class="order-title"> Оставьте свои данные, мы вам перезвоним </p>
 
-        <label>Имя
-          <div class="order-text">
+        <label class="order-text">Имя
+          <div class="input-wrap">
             <input type="text" name="order-name" class="order-input" autofocus>
             <svg class="order-icon" width="18" height="18">
               <use href="./images/icons.svg#person-black"></use>
@@ -489,8 +489,8 @@
         </label>
 
 
-        <label>Телефон
-          <div class="order-text">
+        <label class="order-text">Телефон
+          <div class="input-wrap">
             <input type="tel" name="order-tel" class="order-input">
             <svg class="order-icon" width="18" height="18">
               <use href="./images/icons.svg#phone-black"></use>
@@ -499,8 +499,8 @@
         </label>
 
 
-        <label>Почта
-          <div class="order-text">
+        <label class="order-text">Почта
+          <div class="input-wrap">
             <input type="email" name="order-email" class="order-input">
             <svg class="order-icon" width="18" height="18">
               <use href="./images/icons.svg#email-black"></use>
@@ -511,17 +511,19 @@
         <label class="order-text">Комментарий
           <textarea type="text" name="order-comments" placeholder="Введите текст" class="order-comments"></textarea>
         </label>
-        <label class=" order-check">
 
-          <input type="checkbox" name="order-agreement" class="order-checkbox visually-hidden" required>Соглашаюсь с
-          рассылкой и
-          принимаю&nbsp;
-          <a href="#" style="color: #2196F3;">Условия
-            договора</a>
-          <svg class="check-icon" width="16" height="15">
-            <use href="./images/icons.svg#icon-check"></use>
-          </svg>
-        </label>
+        <div class="check-wrap">
+          <label class=" order-check">
+            <input type="checkbox" name="order-agreement" class="order-checkbox visually-hidden" required>Соглашаюсь с
+            рассылкой и
+            принимаю&nbsp;
+            <a href="#" style="color: #2196F3;">Условия
+              договора</a>
+            <svg class="check-icon" width="16" height="15">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+          </label>
+        </div>
         <div style="text-align: center;">
           <button type="submit" class="order-btn">Отправить</button>
         </div>
