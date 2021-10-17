@@ -711,6 +711,7 @@ img {
 
 .order-input:focus {
   border: 1px solid var(--accent-color);
+  outline-color: var(--accent-color);
 }
 
 .order-input:focus ~ .order-icon {
@@ -728,6 +729,10 @@ img {
   border-radius: 4px;
   resize: none;
 }
+.order-comments:focus {
+  outline-color: var(--accent-color);
+}
+
 .order-comments::placeholder {
   font-size: 14px;
   line-height: 1.14;
@@ -761,10 +766,17 @@ img {
 
 .order-checkbox:checked ~ .check-icon {
   background-color: var(--accent-color);
-  border: transparent;
 }
 .order-checkbox:focus ~ .check-icon {
   box-shadow: 0 0 0 0.1em #000;
+}
+
+.condition-link {
+  color: var(--accent-color);
+}
+
+.condition-link:focus {
+  outline-color: var(--accent-color);
 }
 /* -------------------PORTFOLIO SECTION --------------- */
 
